@@ -14,9 +14,15 @@ importers:
       '@storybook/addon-docs':
         specifier: next
         version: 10.1.0-alpha.10(@types/react@18.3.26)(esbuild@0.25.11)(rollup@4.52.5)(storybook@10.1.0-alpha.10(@testing-library/dom@10.4.1)(prettier@3.6.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vite@7.1.12(@types/node@20.19.23)))(vite@7.1.12(@types/node@20.19.23))
+      '@storybook/components':
+        specifier: ^8.6.14
+        version: 8.6.14(storybook@10.1.0-alpha.10(@testing-library/dom@10.4.1)(prettier@3.6.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vite@7.1.12(@types/node@20.19.23)))
       '@storybook/icons':
         specifier: ^2.0.0
         version: 2.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@storybook/manager-api':
+        specifier: ^8.6.14
+        version: 8.6.14(storybook@10.1.0-alpha.10(@testing-library/dom@10.4.1)(prettier@3.6.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vite@7.1.12(@types/node@20.19.23)))
       '@storybook/react-vite':
         specifier: next
         version: 10.1.0-alpha.10(esbuild@0.25.11)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rollup@4.52.5)(storybook@10.1.0-alpha.10(@testing-library/dom@10.4.1)(prettier@3.6.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vite@7.1.12(@types/node@20.19.23)))(typescript@5.9.3)(vite@7.1.12(@types/node@20.19.23))
@@ -684,6 +690,11 @@ packages:
       storybook: ^10.1.0-alpha.10
       vite: ^5.0.0 || ^6.0.0 || ^7.0.0
 
+  '@storybook/components@8.6.14':
+    resolution: {integrity: sha512-HNR2mC5I4Z5ek8kTrVZlIY/B8gJGs5b3XdZPBPBopTIN6U/YHXiDyOjY3JlaS4fSG1fVhp/Qp1TpMn1w/9m1pw==}
+    peerDependencies:
+      storybook: ^8.2.0 || ^8.3.0-0 || ^8.4.0-0 || ^8.5.0-0 || ^8.6.0-0
+
   '@storybook/csf-plugin@10.1.0-alpha.10':
     resolution: {integrity: sha512-DLFzOaUwu6gPFZ3cMxRdhIOUROq2LSKXuDioXlTTS23lQu5F4SPZM8TeWXQ6Oy5bg1LUhxsGWohTO7jmsThLRA==}
     peerDependencies:
@@ -717,6 +728,11 @@ packages:
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
       react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+
+  '@storybook/manager-api@8.6.14':
+    resolution: {integrity: sha512-ez0Zihuy17udLbfHZQXkGqwtep0mSGgHcNzGN7iZrMP1m+VmNo+7aGCJJdvXi7+iU3yq8weXSQFWg5DqWgLS7g==}
+    peerDependencies:
+      storybook: ^8.2.0 || ^8.3.0-0 || ^8.4.0-0 || ^8.5.0-0 || ^8.6.0-0
 
   '@storybook/react-dom-shim@10.1.0-alpha.10':
     resolution: {integrity: sha512-YFzH9pPweA/RHsyrR9C2bHUKZzlGJTXNO/NQCr2k/3SzmPFcYkprwQjtLx40INd6xD/rcpOCFrVoFs7yNyVfaw==}
@@ -3664,6 +3680,10 @@ snapshots:
       - rollup
       - webpack
 
+  '@storybook/components@8.6.14(storybook@10.1.0-alpha.10(@testing-library/dom@10.4.1)(prettier@3.6.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vite@7.1.12(@types/node@20.19.23)))':
+    dependencies:
+      storybook: 10.1.0-alpha.10(@testing-library/dom@10.4.1)(prettier@3.6.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vite@7.1.12(@types/node@20.19.23))
+
   '@storybook/csf-plugin@10.1.0-alpha.10(esbuild@0.25.11)(rollup@4.52.5)(storybook@10.1.0-alpha.10(@testing-library/dom@10.4.1)(prettier@3.6.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vite@7.1.12(@types/node@20.19.23)))(vite@7.1.12(@types/node@20.19.23))':
     dependencies:
       storybook: 10.1.0-alpha.10(@testing-library/dom@10.4.1)(prettier@3.6.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vite@7.1.12(@types/node@20.19.23))
@@ -3684,6 +3704,10 @@ snapshots:
     dependencies:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
+
+  '@storybook/manager-api@8.6.14(storybook@10.1.0-alpha.10(@testing-library/dom@10.4.1)(prettier@3.6.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vite@7.1.12(@types/node@20.19.23)))':
+    dependencies:
+      storybook: 10.1.0-alpha.10(@testing-library/dom@10.4.1)(prettier@3.6.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vite@7.1.12(@types/node@20.19.23))
 
   '@storybook/react-dom-shim@10.1.0-alpha.10(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@10.1.0-alpha.10(@testing-library/dom@10.4.1)(prettier@3.6.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vite@7.1.12(@types/node@20.19.23)))':
     dependencies:

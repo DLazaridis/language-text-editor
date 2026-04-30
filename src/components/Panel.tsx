@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useState } from 'react';
-import { useChannel, useParameter, useArgs } from 'storybook/manager-api';
+import { useChannel, useParameter, useArgs } from '@storybook/manager-api';
 
 import { PARAM_KEY, EVENT_PREFIX } from '../constants';
 import type { LanguageTextEditorConfig, FieldConfig, OverridesMap } from '../types';

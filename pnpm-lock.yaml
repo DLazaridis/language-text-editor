@@ -26,6 +26,9 @@ importers:
       '@storybook/react-vite':
         specifier: next
         version: 10.1.0-alpha.10(esbuild@0.25.11)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rollup@4.52.5)(storybook@10.1.0-alpha.10(@testing-library/dom@10.4.1)(prettier@3.6.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vite@7.1.12(@types/node@20.19.23)))(typescript@5.9.3)(vite@7.1.12(@types/node@20.19.23))
+      '@storybook/types':
+        specifier: ^8.6.14
+        version: 8.6.14(storybook@10.1.0-alpha.10(@testing-library/dom@10.4.1)(prettier@3.6.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vite@7.1.12(@types/node@20.19.23)))
       '@types/node':
         specifier: ^20
         version: 20.19.23
@@ -759,6 +762,11 @@ packages:
     peerDependenciesMeta:
       typescript:
         optional: true
+
+  '@storybook/types@8.6.14':
+    resolution: {integrity: sha512-33kzHZa7h6/EygeLZDcm1PNRTlybokz8dzAh2JYjpETf77pG8jhPmEfrI2oHSAdgNeK7A3OMcGA/EwEN7EJdzw==}
+    peerDependencies:
+      storybook: ^8.2.0 || ^8.3.0-0 || ^8.4.0-0 || ^8.5.0-0 || ^8.6.0-0
 
   '@testing-library/dom@10.4.1':
     resolution: {integrity: sha512-o4PXJQidqJl82ckFaXUeoAW+XysPLauYI43Abki5hABd853iMhitooc6znOnczgbTYmEP6U6/y1ZyKAIsvMKGg==}
@@ -3749,6 +3757,10 @@ snapshots:
       typescript: 5.9.3
     transitivePeerDependencies:
       - supports-color
+
+  '@storybook/types@8.6.14(storybook@10.1.0-alpha.10(@testing-library/dom@10.4.1)(prettier@3.6.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vite@7.1.12(@types/node@20.19.23)))':
+    dependencies:
+      storybook: 10.1.0-alpha.10(@testing-library/dom@10.4.1)(prettier@3.6.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vite@7.1.12(@types/node@20.19.23))
 
   '@testing-library/dom@10.4.1':
     dependencies:

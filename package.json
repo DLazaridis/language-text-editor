@@ -1,6 +1,6 @@
 {
   "name": "storybook-addon-language-text-editor",
-  "version": "0.1.0",
+  "version": "0.1.6",
   "description": "Storybook addon panel for editing per-language text overrides with localStorage persistence",
   "keywords": [
     "storybook-addon",
@@ -97,7 +97,9 @@
       "src/preview.ts",
       "src/index.ts"
     ],
-    "nodeEntries": ["src/preset.ts"]
+    "nodeEntries": [
+      "src/preset.ts"
+    ]
   },
   "storybook": {
     "displayName": "Language Text Editor",

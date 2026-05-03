@@ -1,3 +1,15 @@
+# v0.1.10 (Sun May 03 2026)
+
+#### ⚠️ Pushed to `main`
+
+- docs: update supported frameworks (maintenance.dlazaridis@gmail.com)
+
+#### Authors: 1
+
+- Dimitrios Lazaridis (maintenance.dlazaridis@gmail.com)
+
+---
+
 # v0.1.9 (Thu Apr 30 2026)
 
 #### ⚠️ Pushed to `main`

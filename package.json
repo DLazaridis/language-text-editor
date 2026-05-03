@@ -14,6 +14,7 @@
     "type": "git",
     "url": "https://github.com/DLazaridis/language-text-editor"
   },
+  "homepage": "https://github.com/DLazaridis/language-text-editor#readme",
   "license": "MIT",
   "author": "Dimitrios Lazaridis",
   "type": "module",
@@ -106,10 +107,8 @@
   "storybook": {
     "displayName": "Language Text Editor",
     "supportedFrameworks": [
-      "vue3-vite",
-      "vue3-webpack5",
-      "react-vite",
-      "react-webpack5"
+      "react",
+      "vue"
     ],
     "icon": "https://user-images.githubusercontent.com/321738/63501763-88dbf600-c4cc-11e9-96cd-94adadc2fd72.png"
   },

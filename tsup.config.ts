@@ -1,6 +1,6 @@
 import { defineConfig, type Options } from 'tsup';
 
-const NODE_TARGET = 'node20.19'; // Minimum Node version supported by Storybook 10
+const NODE_TARGET = 'node20.19'; // Minimum Node version supported by Storybook 11
 
 export default defineConfig(async () => {
   // reading the three types of entries from package.json, which has the following structure:
@@ -34,12 +34,11 @@ export default defineConfig(async () => {
     external: [
       'react',
       'react-dom',
-      '@storybook/components',
       '@storybook/icons',
-      '@storybook/manager-api',
-      '@storybook/types',
       'storybook/internal/components',
       'storybook/manager-api',
+      'storybook/internal/csf',
+      'storybook/internal/types',
       'vue',
     ],
   };

@@ -14,8 +14,16 @@ Ideal for multilingual component libraries where content authors need to preview
 - 🔄 **Real-time sync** — changes push to the preview iframe via Storybook channels
 - 🧩 **Vue 3 composable** — `useLanguageTextOverrides()` for consuming overrides in Vue stories
 
-## Installation
+## Compatibility
 
+| Addon version | Storybook |
+|---|---|
+| 0.1.0 – 0.1.7 | 9.x |
+| 0.1.8 – 0.1.10 | 8.x |
+| 0.1.11 | 10.x |
+| 1.x | 11.x |
+
+## Installation
 ```sh
 npm install --save-dev storybook-addon-language-text-editor
 ```
@@ -31,6 +39,18 @@ const config: StorybookConfig = {
 };
 
 export default config;
+```
+
+And register the preview addon:
+
+```ts
+// .storybook/preview.ts
+import { definePreview } from '@storybook/your-framework';
+import addon from 'storybook-addon-language-text-editor';
+
+export default definePreview({
+  addons: [addon()],
+});
 ```
 
 ## Usage

@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useState } from 'react';
-import { useChannel, useParameter, useArgs } from '@storybook/manager-api';
+import { useChannel, useParameter, useArgs } from 'storybook/manager-api';
 
 import { PARAM_KEY, EVENT_PREFIX } from '../constants';
 import type { LanguageTextEditorConfig, FieldConfig, OverridesMap } from '../types';
@@ -154,6 +154,7 @@ export function LanguageTextEditorPanel() {
     border: '1px solid #ccc',
     borderRadius: 4,
     background: '#fff',
+    color: '#333',
     cursor: 'pointer',
   };
   const inputStyle: React.CSSProperties = {

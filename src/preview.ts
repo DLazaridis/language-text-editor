@@ -1,4 +1,4 @@
-import type { ProjectAnnotations, Renderer } from '@storybook/types';
+import type { ProjectAnnotations, Renderer } from 'storybook/internal/types';
 
 /**
  * The Language Text Editor addon is manager-only (panel).

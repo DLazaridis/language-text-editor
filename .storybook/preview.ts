@@ -1,6 +1,9 @@
-import type { Preview } from '@storybook/react-vite';
+import { definePreview } from '@storybook/react-vite';
+import addonDocs from '@storybook/addon-docs';
+import addon from '../dist/index.js';
 
-const preview: Preview = {
+export default definePreview({
+  addons: [addonDocs(), addon()],
   parameters: {
     controls: {
       matchers: {
@@ -12,6 +15,4 @@ const preview: Preview = {
   initialGlobals: {
     background: { value: 'light' },
   },
-};
-
-export default preview;
+});

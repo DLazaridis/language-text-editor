@@ -27,9 +27,7 @@ Then register it in your Storybook configuration:
 import type { StorybookConfig } from '@storybook/vue3-vite'; // or your framework
 
 const config: StorybookConfig = {
-  addons: [
-    'storybook-addon-language-text-editor',
-  ],
+  addons: ['storybook-addon-language-text-editor'],
 };
 
 export default config;
@@ -91,12 +89,12 @@ In the Storybook UI, open the **Language Text** panel (bottom tabs). You'll see:
 
 ### Parameters (`parameters.languageTextEditor`)
 
-| Property         | Type            | Default      | Description                                              |
-| ---------------- | --------------- | ------------ | -------------------------------------------------------- |
-| `storageKey`     | `string`        | **required** | localStorage key for persisting overrides                |
-| `languages`      | `string[]`      | `[]`         | Available language codes shown in the dropdown           |
-| `languageArgKey` | `string`        | `'language'` | The args key that holds the current language             |
-| `fields`         | `FieldConfig[]` | **required** | Text fields to expose in the editor                      |
+| Property         | Type            | Default      | Description                                    |
+| ---------------- | --------------- | ------------ | ---------------------------------------------- |
+| `storageKey`     | `string`        | **required** | localStorage key for persisting overrides      |
+| `languages`      | `string[]`      | `[]`         | Available language codes shown in the dropdown |
+| `languageArgKey` | `string`        | `'language'` | The args key that holds the current language   |
+| `fields`         | `FieldConfig[]` | **required** | Text fields to expose in the editor            |
 
 ### `FieldConfig`
 
@@ -105,7 +103,7 @@ In the Storybook UI, open the **Language Text** panel (bottom tabs). You'll see:
 | `key`             | `string`   | —       | Storage key for the override value                      |
 | `label`           | `string`   | `key`   | Human-readable label in the panel                       |
 | `multiline`       | `boolean`  | `false` | Renders a `<textarea>` instead of `<input>`             |
-| `markdown`        | `boolean`  | `false` | Enables markdown-aware escaping and monospace textarea   |
+| `markdown`        | `boolean`  | `false` | Enables markdown-aware escaping and monospace textarea  |
 | `allowedMarkdown` | `string[]` | `[]`    | Markdown characters that should **not** be auto-escaped |
 
 ### Exports

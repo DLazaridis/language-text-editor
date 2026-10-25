@@ -49,11 +49,11 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.36.0",
-    "@storybook/addon-docs": "next",
+    "@storybook/addon-docs": "^10.0.0",
     "@storybook/components": "^8.6.14",
     "@storybook/icons": "^2.0.0",
     "@storybook/manager-api": "^8.6.14",
-    "@storybook/react-vite": "next",
+    "@storybook/react-vite": "^10.0.0",
     "@storybook/types": "^8.6.14",
     "@types/node": "^20",
     "@types/react": "^18.2.65",
@@ -65,13 +65,13 @@
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.4",
     "eslint-plugin-react": "^7.37.5",
-    "eslint-plugin-storybook": "next",
+    "eslint-plugin-storybook": "^10.0.0",
     "npm-run-all2": "^8.0.4",
     "prettier": "^3.6.2",
     "prompts": "^2.4.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "storybook": "next",
+    "storybook": "^10.0.0",
     "ts-dedent": "^2.2.0",
     "tsup": "^8.5.0",
     "typescript": "^5.8.3",
@@ -112,5 +112,5 @@
     ],
     "icon": "https://user-images.githubusercontent.com/321738/63501763-88dbf600-c4cc-11e9-96cd-94adadc2fd72.png"
   },
-  "packageManager": "pnpm@10.22.0+sha512.bf049efe995b28f527fd2b41ae0474ce29186f7edcb3bf545087bd61fbbebb2bf75362d1307fda09c2d288e1e499787ac12d4fcb617a974718a6051f2eee741c"
+  "packageManager": "pnpm@11.0.8+sha256.7d73b1a9e413cde021551917fa25995b59011c3ca628ed0ad09e1e117001a7aa"
 }

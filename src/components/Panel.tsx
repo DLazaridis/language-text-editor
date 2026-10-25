@@ -45,8 +45,15 @@ function writeOverrides(storageKey: string, overrides: OverridesMap): void {
 // ---------------------------------------------------------------------------
 
 export function LanguageTextEditorPanel() {
-  const config = useParameter<LanguageTextEditorConfig | undefined>(PARAM_KEY);
-  const [args, updateArgs] = useArgs();
+  const config = (useParameter as (key: string) => LanguageTextEditorConfig | undefined)(PARAM_KEY);
+  const [args, updateArgs] = (
+    useArgs as unknown as () => [
+      Record<string, unknown>,
+      (next: Record<string, unknown>) => void,
+      (...rest: unknown[]) => void,
+      Record<string, unknown>,
+    ]
+  )();
 
   const storageKey = config?.storageKey ?? '';
   const fields = config?.fields ?? [];
@@ -57,7 +64,11 @@ export function LanguageTextEditorPanel() {
   const [overrides, setOverrides] = useState<OverridesMap>(() => (storageKey ? readOverrides(storageKey) : {}));
   const language = (args?.[languageArgKey] as string) ?? 'en';
 
-  const emit = useChannel({
+  const emit = (
+    useChannel as (
+      handlers: Record<string, (...a: unknown[]) => void>,
+    ) => (event: string, ...payload: unknown[]) => void
+  )({
     storyRendered: () => {
       if (storageKey) setOverrides(readOverrides(storageKey));
     },
@@ -123,7 +134,7 @@ export function LanguageTextEditorPanel() {
     return () => window.removeEventListener('focus', onFocus);
   }, [storageKey]);
 
-  // ── Empty state ──────────────────────────────────────────────────────
+  // -- Empty state ------------------------------------------------------
   if (!config || !storageKey || fields.length === 0) {
     return (
       <div style={{ padding: 16, color: '#999', fontSize: 13 }}>
@@ -227,7 +238,7 @@ export function LanguageTextEditorPanel() {
                     {c}
                   </code>
                 ))}
-                — other markdown characters are auto-escaped
+                other markdown characters are auto-escaped
               </div>
             )}
             {multiline || markdown ? (

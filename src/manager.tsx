@@ -9,8 +9,8 @@ addons.register(ADDON_ID, () => {
   addons.add(PANEL_ID, {
     type: types.PANEL,
     title: 'Language Text',
-    match: ({ viewMode }) => viewMode === 'story',
-    render: ({ active }) => (
+    match: ({ viewMode }: { viewMode?: string }) => viewMode === 'story',
+    render: ({ active }: { active?: boolean }) => (
       <AddonPanel active={active ?? false}>
         <LanguageTextEditorPanel />
       </AddonPanel>

@@ -1,3 +1,15 @@
+# v0.1.11 (Sun Oct 25 2026)
+
+#### ⚠️ Pushed to `main`
+
+- chore: update dependencies and panel component (maintenance.dlazaridis@gmail.com)
+
+#### Authors: 1
+
+- Dimitrios Lazaridis (maintenance.dlazaridis@gmail.com)
+
+---
+
 # v0.1.10 (Sun May 03 2026)
 
 #### ⚠️ Pushed to `main`

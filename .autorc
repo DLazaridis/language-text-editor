@@ -2,6 +2,7 @@
   "plugins": ["npm", "conventional-commits"],
   "owner": "DLazaridis",
   "repo": "language-text-editor",
-  "name": "Dimitrios Lazaridis"
+  "name": "DLazaridis",
+  "email": "13046743+dlazaridis@users.noreply.github.com"
 }
 

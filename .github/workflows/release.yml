@@ -31,6 +31,11 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
+      - name: Configure git identity
+        run: |
+          git config user.name "DLazaridis"
+          git config user.email "13046743+dlazaridis@users.noreply.github.com"
+
       - name: Create Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

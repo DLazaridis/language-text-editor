@@ -1,3 +1,20 @@
+# v0.1.12 (Mon Oct 26 2026)
+
+#### ⚠️ Pushed to `main`
+
+- feat!: migrate addon to Storybook 11 ([@DLazaridis](https://github.com/DLazaridis))
+- chore: update dependencies and panel component ([@DLazaridis](https://github.com/DLazaridis))
+- docs: update supported frameworks ([@DLazaridis](https://github.com/DLazaridis))
+- fix: remove Storybook 9 dependencies ([@DLazaridis](https://github.com/DLazaridis))
+- fix: include preset and preview in build entries ([@DLazaridis](https://github.com/DLazaridis))
+- Initial commit ([@DLazaridis](https://github.com/DLazaridis))
+
+#### Authors: 1
+
+- Dimitrios Lazaridis ([@DLazaridis](https://github.com/DLazaridis))
+
+---
+
 # v0.1.11 (Sun Oct 25 2026)
 
 #### ⚠️ Pushed to `main`

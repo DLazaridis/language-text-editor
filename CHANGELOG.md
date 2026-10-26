@@ -1,3 +1,15 @@
+# v1.0.0 (Mon Oct 26 2026)
+
+#### 💥 Breaking Change
+
+- feat!: enable conventional commits and correct release history ([@DLazaridis](https://github.com/DLazaridis))
+
+#### Authors: 1
+
+- Dimitrios Lazaridis ([@DLazaridis](https://github.com/DLazaridis))
+
+---
+
 # v0.1.12 (Mon Oct 26 2026)
 
 #### ⚠️ Pushed to `main`
